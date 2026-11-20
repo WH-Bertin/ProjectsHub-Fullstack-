@@ -20,7 +20,7 @@
             <ul class="nav-links">
                 <li><a class="nav-link nav-link-active" href="#">Home</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="login.html">Investor</a></li>
+                <li><a class="nav-link" href="{% url 'login' %}">Investor</a></li>
                 <li><a class="nav-link" href="#">Student</a></li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
                 </p>
                 <div class="hero-cta">
                     <a class="btn btn-primary" href="#projects">Browse projects</a>
-                    <a class="btn btn-outline" href="login.html">I'm an investor</a>
+                    <a class="btn btn-outline" href="{% url 'login' %}">I'm an investor</a>
                 </div>
             </div>
             <div class="hero-image-wrap">
@@ -76,7 +76,7 @@
                 Join 500+ institutional investors already discovering premium deal flow
                 directly from top-tier universities.
             </p>
-            <a class="btn btn-primary" href="login.html">Create Investor Profile</a>
+            <a class="btn btn-primary" href="{% url 'login' %}">Create Investor Profile</a>
         </section>
 
     </main>
@@ -87,7 +87,7 @@
             <span class="nav-brand">Project's Hub</span>
             <ul class="footer-links">
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="login.html">Investor Login</a></li>
+                <li><a href="{% url 'login' %}">Investor Login</a></li>
             </ul>
             <p class="footer-copy">© 2026 Project's Hub. All rights reserved.</p>
         </div>
