@@ -35,7 +35,7 @@
     });
   }
 
-  fetch('/static/index/json/index.json')
+  /* fetch('/static/index/json/index.json')
 
   .then(response => response.json())
 
@@ -70,4 +70,5 @@
   })
   .catch(error =>{
     console.error('error fetching data',error);
-  });
+  }); */
+  

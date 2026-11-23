@@ -63,8 +63,26 @@
             </div>
 
             <div class="card-grid">
-
-               
+                {% for x in projects %}
+                <article class="card">
+                    <div>
+                        <div class="card-tag-row">
+                            <span class="card-tag">{{ x.cardTag }}</span>
+                            <span class="material-symbols-outlined card-icon">{{ x.matSymbol }}</span>
+                        </div>
+                        <h3 class="card-title">{{ x.cardTitle }}</h3>
+                        <p class="card-desc">{{ x.cardDesc }}</p>
+                        <div class="card-author">
+                            <div class="avatar">{{ x.avatar }}</div>
+                            <span class="author-name">{{ x.authorName }}</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-primary" href="#">VIEW DETAILS</a>
+                        <a class="btn btn-outline" href="login.html">CONTACT INVESTOR</a>
+                    </div>
+                </article>
+                {% endfor %}
 
             </div>
         </section>
